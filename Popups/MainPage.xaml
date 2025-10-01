@@ -6,12 +6,20 @@
     <Grid Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />  
         </Grid.RowDefinitions>
-        <ScrollView>
-
+        
+        <ScrollView Grid.Row="0" >
+            <FlexLayout x:Name="flex" 
+                        Wrap="Wrap" JustifyContent="Start" AlignItems="Start" AlignContent="Start">
+                
+            </FlexLayout>
+            
         </ScrollView>
-        <Button Grid.Row="1" Text="Toevoegen" CornerRadius="20" Margin="10" />
+
+        <Button Grid.Row="1" Text="Altijd onderaan" Padding="50" Clicked="OnAdd_Clicked" />
+
+
     </Grid>
 
 
